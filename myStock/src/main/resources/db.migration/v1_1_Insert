@@ -1,0 +1,54 @@
+ insert  into role (unique_key, name, description, created_at, updated_at, status, is_hidden)
+values ('9fa738f491aefd5636ee76ff8971303e','admin','Admin Role','2020-01-09 04:39:05','2020-01-09 04:39:05','ACTIVE','ACTIVE');
+
+ insert  into role (unique_key, name, description, created_at, updated_at, status, is_hidden)
+values ('7c870ce19c72d18603a476dfa12f61f7','Merchant Admin','Merchant Admin','2016-12-09 04:39:05','2016-12-09 04:39:05','ACTIVE','ACTIVE');
+
+  insert  into role (unique_key, name, description, created_at, updated_at, status, is_hidden)
+values ('7c870ce19c72d18603a476dfa12f61g8','User ','User ','2020-01-09 04:39:05','2016-01-09 04:39:05','ACTIVE','ACTIVE');
+
+insert into [user] ( unique_key, first_name, last_name, email, role_id, phone, password, status, last_login_date, created_at, updated_at, address)
+values('04d7f12d01b8e8ccaeb057bdab27778a', 'Root', 'Admin', 'admin@activedgetecgnology.com', '9fa738f491aefd5636ee76ff8971303e', '2348022334455', '$2a$10$SSGM0k3.TtkWSMRGG4rEA.P.PWAdsZDk8PyPP/7qcveWW7jneA7Kq', 'ACTIVE' ,NULL, '2020-01-09 09:18:23', NULL, '4b utomi Street Lekki Phase 1, Lagos');
+
+
+
+
+  insert  into permission (name , description, code, status, is_hidden) values
+('Create User','','user_create','ACTIVE','ACTIVE'),
+('Update User','','user_update','ACTIVE','ACTIVE'),
+('View User','','user_view','ACTIVE','ACTIVE'),
+('View All Users','','user_index','ACTIVE','ACTIVE'),
+('Create Role','','role_create','ACTIVE','ACTIVE'),
+('Update Role','','role_update','ACTIVE','ACTIVE'),
+('View Role ','','role_view','ACTIVE','ACTIVE'),
+('View All Roles','','role_index','ACTIVE','ACTIVE'),
+('View Permissions','','role_viewpermissions','ACTIVE','ACTIVE'),
+('View Roles Permissions','','role_viewrolepermissions','ACTIVE','ACTIVE');
+
+
+
+
+
+  insert  into role_permission (role_id, permission_id, status, created_at, updated_at)
+values (1,1,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,2,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,3,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,4,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,5,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,6,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,7,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,8,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,9,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+ (1,10,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06');
+
+  insert  into role_permission (role_id, permission_id, status, created_at, updated_at)
+ values (2,1,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,2,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,3,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,4,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,5,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,6,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,7,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,8,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,9,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06'),
+  (2,10,'ACTIVE','2018-02-20 20:01:06','2018-02-20 20:01:06');
